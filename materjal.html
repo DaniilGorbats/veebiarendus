@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Daniil Gorbatš</title>
+
+	    <style>
+	      * {
+	        box-sizing: border-box;
+	        font-size: 18px;
+	      }
+	      body {
+	        display: flex;
+	        flex-direction: column;
+	        min-height: 100vh;
+	        margin: 0;
+	      }
+	      .main { 
+	        display: flex; 
+	        flex: 1; 
+	      }
+	      .main > article { 
+	        flex: 1; 
+	      }
+	      .main > nav, .main > aside {
+	        flex: 0 0 20vw; 
+	        background: RGB(250, 128, 114);
+	      }
+	      .main > nav { 
+	        order: -1;
+	      }
+	      header, footer { 
+	        background: RGB(205, 92, 92);
+	        height: 7vh; 
+	      }
+	      header, footer, article, nav, aside {
+	        padding: 20px; 
+	      }
+	      footer {
+	      	text-align: center;
+	      }
+	      header, footer {
+	      	font-weight: bold;
+	      }
+	        .main-nav {
+	        display: flex;
+	        padding: 15px;
+	        border-radius: 5px;
+	        background: RGB(233, 150, 122);
+	        color: #fff;
+	        font-weight: 500;
+	      }
+	      .main-nav > ul {
+	        display: flex;
+	        flex: 2;
+	        padding: 0;
+	        margin: 0;
+	        list-style-type: none;
+	      }
+	      .main-nav li { 
+	        margin-right: 20px;     
+	      }
+	      .main-nav > form {
+	        display: flex;
+	        justify-content: flex-end;
+	        flex: 1;
+	      }
+	      .main-nav input { 
+	        flex: 1; 
+	        padding: 5px;
+	      }
+	      .main-nav button {
+	        padding: 0 20px;
+	        margin-left: 10px;
+	        border: 0;
+	        border-radius: 20px;
+	        background: #fff;
+	        color: #666;
+	      }
+	      @media screen and (max-width: 575px) {
+	        .main-nav { 
+	          flex-direction: column; 
+	        }
+	        .main-nav ul { 
+	          margin-bottom: 10px;
+	        }
+	      }
+	      img {
+	      	padding: 10px;
+	      }
+	    </style>
+	</head>
+
+  <body>
+          <nav class="main-nav">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Contact us</li>
+      </ul>
+      <form>
+        <input type="search" placeholder="Search">
+        <button>Go</button>
+      </form>
+    </nav>
+    	<header>Kiirus on kogemus!</header>
+    <div class="main">
+      <article>
+      	<h1>Mis vahe on programmeerija ja tarkvaraarendaja tööl?</h1>
+			<p>Eesti IT-ettevõtetes kasutatakse neid ametinimetusi programmeerimisest rääkides läbisegi, aga kas neil ametitel sisuliselt tegelikult vahet on?</p>
+
+			<p>Kuigi iga tarkvaraarendaja nimetusega spetsialist on Eestis koodikirjutamisega sina peal, siis väikest vahet võib nende kahe nimetuse vahel siiski teha. Tarkvaararendajal peab olema projektist terviklikum ülevaade, sest tema disainib arvutiprogrammi, mis peaks tellija soovidele vastavalt töötama. Programmeerija tegeleb talle ülesandeks antud kitsama töölõiguga ja kirjutab koodi, mis selle arvutiprogrammi osana tööle peab hakkama. Näitlikustamiseks võib öelda, et kui programmeerija tegeleb majaehitusel tellistega, siis tarkvaraarendaja peab ette kujutama tervet seina. IT-ettevõtte arhitekt ja analüütik on aga need, kes teavad, missugune kliendi tellitud maja saab olema.</p>
+
+			<p>Tänu tehnoloogia arengule pole vahet, kus oma tööd teha – koodi võib kirjutada Eesti ettevõttele ka Austraalia rannikulinnast. Programmeerimisteenust võib vabalt sisse osta hoopis India spetsialistidelt. Ameerikas on prognoositud, et muudest riikidest odavamalt koodikirjutajate värbamise tõttu on sealsetel programmeerijatel aina vähem tööd. Samas ennustatakse, et tarkvaraarendajad lähevad koha peal üha rohkem hinda.</p>
+
+			<p>Eesti tööturul kasvab vajadus tarkvaraarendajate ja IKT-spetsialistide järele, kes suudavad teha koostööd rahvusvahelistes meeskondades ning on omandanud valdkonnast laiapõhjalised teadmised ja oskused.</p>
+		</article>
+
+        <nav>
+	        <a href="https://moodle.hitsa.ee/pluginfile.php/2838400/mod_resource/content/2/Loeng%204_html%2C%20audio%2C%20video%2C%20kaart%2C%20vorm.pdf">HTML</a><br>
+	        <a href="https://moodle.hitsa.ee/pluginfile.php/2838400/mod_resource/content/2/Loeng%204_html%2C%20audio%2C%20video%2C%20kaart%2C%20vorm.pdf">CSS</a><br>
+	    	<a href="https://moodle.hitsa.ee/pluginfile.php/2838400/mod_resource/content/2/Loeng%204_html%2C%20audio%2C%20video%2C%20kaart%2C%20vorm.pdf">JAVASCRIPT</a><br><br>
+	    	<iframe width="320" height="240" src="https://www.youtube.com/embed/qKoajPPWpmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    	<p>Allikas: https://www.youtube.com/watch?v=qKoajPPWpmo</p>
+    	</nav>
+
+      <aside>
+      	<p>Log in</p>
+      	<img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png">
+      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.6054081698644!2d26.71192471624951!3d58.3494581962371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb3747db90ed05%3A0x387b666bb555e743!2sKopli%201%2C%2050115%20Tartu!5e0!3m2!1sen!2see!4v1568188519065!5m2!1sen!2see" width="320" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
+      </aside>
+    </div>
+    <footer>&copy;2019</footer>
+  </body>
+</html>
