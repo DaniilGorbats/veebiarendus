@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="HTML,CSS,HTML5,CSS3"/>
+		<meta name="author" content="Daniil GorbatÏs"/>
+		<link rel="icon" href="./favicon.ico">
+
+		<title>Daniil GorbatÏs</title>
+
+		<style>
+	      * {
+	        box-sizing: border-box;
+	        font-size: 18px;
+	        margin: 0px;
+	        padding: 0px;
+	      }
+	      body {
+	        display: flex;
+	        flex-direction: column;
+	        min-height: 100vh;
+	        margin: 0;
+	      }
+	      .artikkel1 {
+	      	background: #586a69;
+	      }
+	      .artikkel2 {
+	      	background: #557b68;
+	      }
+	      .main { 
+	        display: flex; 
+	        flex: 1; 
+	      }
+	      .main > article { 
+	        flex: 1; 
+	      }
+	      .main > .oof {
+	        flex: 0 0 20vw;
+	      }
+	     
+	      header, footer { 
+	        background: #424643;
+	        height: 7vh; 
+	      }
+	      header, footer, article {
+	        padding: 20px; 
+	      }
+	      footer {
+	      	text-align: center;
+	      }
+	      header, footer {
+	      	font-weight: bold;
+	      }
+	      header {
+	      	padding: 100px;
+	      }
+	      table {
+	      	position: absolute;
+	      	top: 100px;
+	      	right: 5%;
+	      }
+
+	      p, button {
+	      	margin: 10px;
+	      	width: 95%;
+	      }
+	      button {
+	      	padding: 15px;
+	      	color: #fff;
+	      	background: #629cae;
+	      }
+	        .main-nav {
+	        display: flex;
+	        padding: 15px;
+	        background: #2e322f;
+	        color: #629cae;
+	        font-weight: 500;
+	        text-shadow: 2px 2px #000;
+	      }
+	      .main-nav > ul {
+	        display: flex;
+	        flex: 2;
+	        padding: 0;
+	        margin: 0;
+	        list-style-type: none;
+	      }
+	      .main-nav li { 
+	        margin-right: 20px;     
+	      }
+	      .main-nav > form {
+	        display: flex;
+	        justify-content: flex-end;
+	        flex: 1;
+	      }
+	      .main-nav input { 
+	        flex: 1; 
+	        padding: 5px;
+	      }
+	      .main-nav button {
+	        padding: 0 20px;
+	        margin-left: 10px;
+	        border: 0;
+	        border-radius: 20px;
+	        background: #fff;
+	        color: #666;
+	      }
+
+	      img {
+	      	padding: 10px;
+	      }
+
+	      nav {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			width: 100%;
+			border-top: solid;
+			z-index: 200;
+		}
+
+		.navicon2 div {
+		  width: 25px;
+		  height: 3px;
+		  background-color: #ffffff;
+		  margin: 4px;
+		  -webkit-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+		}
+
+		.topnav {
+		  list-style-type: none;
+		  overflow: hidden;
+		  background-color: #101010;
+		  opacity: 0.9;
+		}
+
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #858585;
+		  font-family: 'Roboto', sans-serif;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 18px;
+		}
+
+		.topnav a:hover:not(.active):not(.navicon1) {
+		  border-bottom: solid;
+		  color: #ffffff;
+		  border-color: #ffffff;
+		  -webkit-transition: all 0.1s ease;
+		  transition: all 0.1s ease;
+		  -webkit-animation: colorchange 0.5s;
+		          animation: colorchange 0.5s;
+		}
+
+		.topnav a.active {
+		  color: #ffffff;
+		}
+
+		.topnav a.active:hover {
+		  border-bottom: solid;
+		  border-color: #ffffff;
+		  -webkit-transition: all 0.1s ease;
+		  transition: all 0.1s ease;
+		  -webkit-animation: colorchange 0.7s;
+		          animation: colorchange 0.7s;
+		}
+
+		.topnav .navicon1 {
+		  display: none;
+		}
+
+		.topnav a.float-right {
+		  float: right;
+		}
+
+		@media screen and (max-width: 768px) {
+		  .topnav a:not(:first-child) {
+		    display: none;
+		  }
+		  .topnav a.navicon1 {
+		    float: right;
+		    display: block;
+		  }
+		}
+
+		@media screen and (max-width: 768px) {
+		  .topnav.responsive {
+		    position: relative;
+		  }
+		  .topnav.responsive .navicon1 {
+		    position: absolute;
+		    right: 31px;
+		    top: 0;
+		  }
+		  .topnav.responsive a {
+		    float: none;
+		    display: block;
+		    text-align: middle;
+		  }
+		}
+	    </style>
+
+	</head>
+	<body>
+
+	<nav class="topnav" id="topnav">
+		<a href="#" class="active">Home</a>
+		<a href="#">Asi321</a>
+		<a href="#">Projects</a>
+		<a href="#">Other</a>
+		<a href="#">Asi45</a>
+		<a class="float-right" href="#">About</a>
+		</div>
+
+		<a href="javascript:void(0);" class="navicon1" onclick="if (!window.__cfRLUnblockHandlers) return false; navicon()" data-cf-modified-6d7e3d97c75f405622ee2467-="">
+		</div>
+		<div class="navicon2 animated bounceInRight">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+		</div>
+		</a>
+		</nav>
+    	<header>
+    		<table border=0 padding=200px height=100px width=100px>
+			<tr>
+				<td colspan="6" rowspan="2" bgcolor="#7094b7"></td>
+				<td colspan="2" rowspan="6" bgcolor="#629cae"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="6" bgcolor="#74a9b2"></td>
+				<td colspan="2" rowspan="2" bgcolor="#9ebfbd"></td>
+				<td colspan="2" rowspan="2" bgcolor="#7094b7"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="2" bgcolor="#6495ed"></td>
+				<td colspan="2" rowspan="2" bgcolor="#159989"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td colspan="6" rowspan="2" bgcolor="#8599a0"></td>
+			</tr>
+			<tr></tr>
+		</table>
+	</header>
+    <div class="main">
+      <article class="artikkel1 oof">
+      	<h1>YES</h1>
+      	<iframe width="100%" height="215" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+
+		<article class="artikkel2">
+      	<h1>YES</h1>
+      	
+		</article>
+        <article class="artikkel1"></article>
+			
+
+      <article class="artikkel2 oof">
+      	<fieldset>
+				<legend>Piltide lisamise vorm</legend>
+
+		        <p>
+			        <label for="a">Autor</label>
+			        <input id="a" class="fname" type="text" name="name" placeholder="Autor">
+		        </p>
+		        <p>
+		        	<label for="b">Pealkiri</label>
+		        	<input id="b" type="text" name="name" placeholder="Pealkiri">
+		        </p>
+		        <p>
+					<label for="d">Pilt</label>
+					<input id="d" type="file" name="fileupload" >
+				</p>
+				<button class="btn">Saada</button>
+			</fieldset> <br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.6054081698644!2d26.71192471624951!3d58.3494581962371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb3747db90ed05%3A0x387b666bb555e743!2sKopli%201%2C%2050115%20Tartu!5e0!3m2!1sen!2see!4v1568188519065!5m2!1sen!2see" width="320" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </article>
+
+    </div>
+
+    <footer>&copy;2019</footer>
+
+	</body>
+</html>
